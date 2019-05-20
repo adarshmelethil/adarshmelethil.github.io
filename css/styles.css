@@ -1,0 +1,32 @@
+
+#profile-pic-container {
+  margin: 20px 0px;
+  padding: 0% 40%;
+  background: #dddddd;
+}
+
+#profile-pic {
+  margin: 5px 5px 0px 5px;
+  padding: 2px 2px;
+  width: 300px;
+}
+
+#profile-pic-note {
+  font-family: 'Stylish', sans-serif;
+  text-align: left;
+  font-style: italic;
+}
+
+#profile-pic-note p {
+  margin: 0px 0px;
+  padding: 0px;
+}
+
+/*
+font-family: 'Stylish', sans-serif;
+font-family: 'Cute Font', cursive;
+font-family: 'Macondo Swash Caps', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive;
+*/
