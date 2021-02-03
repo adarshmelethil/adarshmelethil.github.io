@@ -277,6 +277,7 @@ try{quil.core.begin_draw(gr__6461__auto___6915);
 
 quil.core.no_stroke();
 
+if(cljs.core.not(this$__$1.adarsh_quil$common$Drawable$done_QMARK_$arity$1(null))){
 var n__4607__auto___6918 = self__.points;
 var __6919 = (0);
 while(true){
@@ -306,6 +307,8 @@ continue;
 } else {
 }
 break;
+}
+} else {
 }
 
 quil.core.end_draw(gr__6461__auto___6915);
@@ -346,18 +349,19 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(this$__$1,cljs.core.
 var new_state = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(((((cljs.core.contains_QMARK_(this$__$1,cljs.core.cst$kw$step)) && (cljs.core.not(this$__$1.adarsh_quil$common$Drawable$done_QMARK_$arity$1(null)))))?(function (){var map__6883 = this$__$1;
 var map__6883__$1 = (((((!((map__6883 == null))))?(((((map__6883.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__6883.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__6883):map__6883);
 var step = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__6883__$1,cljs.core.cst$kw$step);
+var size = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__6883__$1,cljs.core.cst$kw$size);
 if((step > 1.0)){
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(this$__$1,cljs.core.cst$kw$step,0.0,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$size,(function (){var x__4219__auto__ = self__.size_end;
-var y__4220__auto__ = (cljs.core.cst$kw$size.cljs$core$IFn$_invoke$arity$1(this$__$1) - self__.size_inc);
+var y__4220__auto__ = (size - self__.size_inc);
 return ((x__4219__auto__ > y__4220__auto__) ? x__4219__auto__ : y__4220__auto__);
 })()], 0));
 } else {
-return cljs.core.update.cljs$core$IFn$_invoke$arity$3(this$__$1,cljs.core.cst$kw$step,((function (map__6883,map__6883__$1,step,width,height,this$__$1){
+return cljs.core.update.cljs$core$IFn$_invoke$arity$3(this$__$1,cljs.core.cst$kw$step,((function (map__6883,map__6883__$1,step,size,width,height,this$__$1){
 return (function (p1__6864_SHARP_){
 var x__4222__auto__ = 1.1;
 var y__4223__auto__ = (p1__6864_SHARP_ + self__.speed);
 return ((x__4222__auto__ < y__4223__auto__) ? x__4222__auto__ : y__4223__auto__);
-});})(map__6883,map__6883__$1,step,width,height,this$__$1))
+});})(map__6883,map__6883__$1,step,size,width,height,this$__$1))
 );
 }
 })():this$__$1),cljs.core.cst$kw$frame_DASH_index,(cljs.core.cst$kw$frame_DASH_index.cljs$core$IFn$_invoke$arity$1(this$__$1) + cljs.core.cst$kw$frame_DASH_inc.cljs$core$IFn$_invoke$arity$1(this$__$1)));
@@ -553,7 +557,7 @@ var z_count = (100);
 var z_val_inc = 0.05;
 var spike_mag = (50);
 var points = (100);
-var speed = 0.1;
+var speed = 0.05;
 var size_start = (50);
 var size_end = (8);
 var size_inc = (2);
