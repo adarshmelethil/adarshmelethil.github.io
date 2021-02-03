@@ -7,6 +7,8 @@ goog.require('quil.middleware');
 goog.require('adarsh_quil.common');
 goog.require('adarsh_quil.utils');
 adarsh_quil.img_paint_stroke.process_img_once = (function adarsh_quil$img_paint_stroke$process_img_once(img,width,height){
+quil.core.resize(img,width,height);
+
 var mask = quil.core.create_image(width,height);
 var mask_px = quil.core.pixels.cljs$core$IFn$_invoke$arity$1(mask);
 var px = quil.core.pixels.cljs$core$IFn$_invoke$arity$1(img);
@@ -48,8 +50,6 @@ break;
 quil.core.update_pixels.cljs$core$IFn$_invoke$arity$1(img);
 
 quil.core.update_pixels.cljs$core$IFn$_invoke$arity$1(mask);
-
-quil.core.resize(img,width,height);
 
 quil.core.mask_image.cljs$core$IFn$_invoke$arity$2(img,mask);
 
