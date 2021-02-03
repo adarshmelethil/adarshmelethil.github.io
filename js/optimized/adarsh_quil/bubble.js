@@ -488,5 +488,5 @@ var vec__6911 = p__6910;
 var width = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6911,(0),null);
 var height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6911,(1),null);
 var profile_img_url = "img/profile.jpeg";
-return (new adarsh_quil.bubble.Bubble_Image(weight,quil.core.create_graphics.cljs$core$IFn$_invoke$arity$2(width,height),quil.core.load_image(profile_img_url),(10),0.05,(50),(8),(2),null,null,null));
+return (new adarsh_quil.bubble.Bubble_Image(weight,quil.core.create_graphics.cljs$core$IFn$_invoke$arity$2(width,height),quil.core.load_image(profile_img_url),(100),0.1,(50),(8),(2),null,null,null));
 });
